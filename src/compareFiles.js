@@ -7,17 +7,17 @@ const compareFiles = (obj1, obj2) => {
 
   const diff = keys.map((key) => {
     if (!_.has(obj1, key)) {
-      return { key, value: obj2[key], status: 'added' };
+      return { key, value: obj2[key], state: 'added' };
     }
     if (!_.has(obj2, key)) {
-      return { key, value: obj1[key], status: 'deleted' };
+      return { key, value: obj1[key], state: 'deleted' };
     }
     if (obj1[key] !== obj2[key]) {
       return {
-        key, value1: obj1[key], value2: obj2[key], status: 'changed',
+        key, value1: obj1[key], value2: obj2[key], state: 'changed',
       };
     }
-    return { key, value: obj2[key], status: 'unchanged' };
+    return { key, value: obj2[key], state: 'unchanged' };
   });
   return diff;
 };
