@@ -10,8 +10,8 @@ const compareStylish = (comparisonTree) => {
       return `- ${node.key}: ${node.value1}\n+ ${node.key}: ${node.value2}`;
     }
     return `  ${node.key}: ${node.value}`;
-  }).join('\n');
-  return result;
+  });
+  return ['{', ...result, '}'].join('\n');
 };
 
 export default compareStylish;
