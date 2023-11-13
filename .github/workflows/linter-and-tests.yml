@@ -1,0 +1,12 @@
+name: linter and tests
+
+on: push
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: make install
+      - run: make lint
