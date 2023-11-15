@@ -5,6 +5,7 @@ const parse = (format, data) => {
     case 'json': {
       return JSON.parse(data);
     }
+    case 'yml':
     case 'yaml': {
       return yaml.load(data);
     }

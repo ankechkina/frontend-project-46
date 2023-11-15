@@ -13,7 +13,13 @@ const expectedStylish = readFile('expectedStylish.txt');
 
 const json1 = getFixturePath('file1.json');
 const json2 = getFixturePath('file2.json');
+const yaml1 = getFixturePath('file1.yaml');
+const yaml2 = getFixturePath('file2.yaml');
 
-test('getDiff extension Json', () => {
+test('gendiff JSON', () => {
   expect(gendiff(json1, json2)).toEqual(expectedStylish);
+});
+
+test('gendiff YAML', () => {
+  expect(gendiff(yaml1, yaml2)).toEqual(expectedStylish);
 });
