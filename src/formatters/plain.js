@@ -12,10 +12,10 @@ const getPlainFormat = (diff) => {
       const parent = [...parents, `${nest.key}`];
       const pathNameKey = parent.join('.');
       switch (nest.type) {
-        case 'node': {
+        case 'nested': {
           return `${iter(nest.children, parent)}`;
         }
-        case 'delete': {
+        case 'deleted': {
           return `Property '${pathNameKey}' was removed`;
         }
         case 'changed': {
