@@ -10,3 +10,30 @@
 ### Test Coverage Badge
 <a href="https://codeclimate.com/github/ankechkina/frontend-project-46/test_coverage"><img src="https://api.codeclimate.com/v1/badges/6d64560ca403ba595ef6/test_coverage" /></a>
 
+### Setup
+
+```
+clone this repository
+npm install
+npm link
+```
+
+### Usage
+
+1. Displaying help information
+[![asciicast](https://asciinema.org/a/EBeNMyBfmuftD8lHN6yyjqosW.svg)](https://asciinema.org/a/EBeNMyBfmuftD8lHN6yyjqosW)
+
+2. An example of working with flat JSON files:
+[![asciicast](https://asciinema.org/a/uBGwDmrqNzaxM5baXK5EH7bsY.svg)](https://asciinema.org/a/uBGwDmrqNzaxM5baXK5EH7bsY)
+
+3. An example of working with flat YAML files:
+[![asciicast](https://asciinema.org/a/nFh17n933WGDFtaSULrjUCpmF.svg)](https://asciinema.org/a/nFh17n933WGDFtaSULrjUCpmF)
+
+4. An example of working with nested objects (in stylish format):
+[![asciicast](https://asciinema.org/a/HyCnZtBXInujmEwv0GYzwZtCp.svg)](https://asciinema.org/a/HyCnZtBXInujmEwv0GYzwZtCp)
+
+5. Output in plain format:
+[![asciicast](https://asciinema.org/a/Kl01IDBzobhDsyGf9fJnpAjck.svg)](https://asciinema.org/a/Kl01IDBzobhDsyGf9fJnpAjck)
+
+6. Output in JSON format:
+[![asciicast](https://asciinema.org/a/YgOp06m7PJWahgdmRUJOB3ENr.svg)](https://asciinema.org/a/YgOp06m7PJWahgdmRUJOB3ENr)
