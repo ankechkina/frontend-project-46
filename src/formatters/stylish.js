@@ -45,8 +45,8 @@ const iter = (node, depth) => {
   }
 };
 
-const getStylishFormat = (diff, depth = 1) => {
-  const nodes = diff.map((node) => iter(node, depth));
+const getStylishFormat = (comparisonTree, depth = 1) => {
+  const nodes = comparisonTree.map((node) => iter(node, depth));
   return `{\n${nodes.join('\n')}\n}`;
 };
 

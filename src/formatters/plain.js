@@ -6,7 +6,7 @@ const stringify = (value) => {
   return String(value);
 };
 
-const getPlainFormat = (diff) => {
+const getPlainFormat = (comparisonTree) => {
   const iter = (node, parents) => {
     const nodes = node.flatMap((nest) => {
       const parent = [...parents, `${nest.key}`];
@@ -33,7 +33,7 @@ const getPlainFormat = (diff) => {
     });
     return `${nodes.join('\n')}`;
   };
-  return iter(diff, []);
+  return iter(comparisonTree, []);
 };
 
 export default getPlainFormat;
