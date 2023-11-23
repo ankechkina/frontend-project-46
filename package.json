@@ -5,7 +5,7 @@
   "bin": {
     "gendiff": "bin/gendiff.js"
   },
-  "description": "[![Actions Status](https://github.com/ankechkina/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/ankechkina/frontend-project-46/actions)",
+  "description": "This is a program to display the difference between objects (flat and nested).",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
