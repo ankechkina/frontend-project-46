@@ -3,6 +3,8 @@
 <a href="https://codeclimate.com/github/ankechkina/frontend-project-46/maintainability"><img src="https://api.codeclimate.com/v1/badges/6d64560ca403ba595ef6/maintainability" /></a>
 <a href="https://codeclimate.com/github/ankechkina/frontend-project-46/test_coverage"><img src="https://api.codeclimate.com/v1/badges/6d64560ca403ba595ef6/test_coverage" /></a>
 
+### Difference calculator
+
 This is a program to display the difference between objects. It supports both flat and nested objects. The comparison result can be displayed in three formats - stylish (default), plain and JSON. You should use the option *-f* (*--format*) to change the format.
 
 ### Setup
