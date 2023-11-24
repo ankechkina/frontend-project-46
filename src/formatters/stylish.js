@@ -23,8 +23,8 @@ const iter = (node, depth) => {
 
   switch (node.type) {
     case 'nested': {
-      const childrens = node.children.map((nest) => iter(nest, depth + 1));
-      return `${indents.open}  ${node.key}: {\n${childrens.join('\n')}\n${indents.close}    }`;
+      const children = node.children.map((nest) => iter(nest, depth + 1));
+      return `${indents.open}  ${node.key}: {\n${children.join('\n')}\n${indents.close}    }`;
     }
     case 'deleted': {
       return `${indents.open}- ${node.key}: ${stringify(node.value, depth + 1)}`;
